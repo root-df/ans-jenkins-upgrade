@@ -1,0 +1,6 @@
+---
+
+- name: Stop Jenkins
+  ansible.builtin.service:
+    name: jenkins
+    state: stopped

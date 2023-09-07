@@ -1,0 +1,7 @@
+---
+
+- name: Upgrade Jenkins and Java
+  hosts: jenkins
+  become: true
+  roles: 
+    - jenkins-upgrade-role

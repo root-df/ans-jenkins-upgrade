@@ -1,0 +1,13 @@
+---
+# tasks file for jenkins-upgrade-role
+
+- include: stop-jenkins.yml
+
+- include: upgrade-system.yml
+
+- include: upgrade-java.yml
+
+- include: upgrade-jenkins.yml
+
+- include: start-jenkins.yml
+

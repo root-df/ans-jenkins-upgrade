@@ -1,0 +1,4 @@
+- name: Start Jenkins
+  ansible.builtin.service:
+    name: jenkins
+    state: started

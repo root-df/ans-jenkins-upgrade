@@ -1,0 +1,11 @@
+---
+
+- name: Upgrade Java
+  ansible.builtin.yum:
+    name: "{{ java_version }}"
+    state: latest
+
+- name: Correct Java version selected
+  community.general.alternatives:
+    name: java
+    path: "/usr/lib/jvm/{{ java_version }}/bin/java"

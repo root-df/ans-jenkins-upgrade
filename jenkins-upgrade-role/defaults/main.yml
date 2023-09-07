@@ -1,0 +1,5 @@
+---
+# defaults file for jenkins-upgrade-role
+
+java_version: 
+jenkins_gpg_key_year:
